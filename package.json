@@ -1,0 +1,78 @@
+{
+  "name": "@ljoss/rehype-figure-caption",
+  "version": "1.0.0",
+  "description": "A Rehype plugin to transform images into <figure> elements with optional captions.",
+  "main": "dist/cjs/plugin.js",
+  "module": "dist/esm/plugin.js",
+  "types": "dist/types/plugin.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/plugin.js",
+      "require": "./dist/cjs/plugin.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && npm run build:types",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:types": "tsc --emitDeclarationOnly --outDir dist/types",
+    "lint": "eslint . --ext .ts",
+    "test": "vitest",
+    "prepare": "npm run build"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ljoss-Studios/rehype-figure-caption.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "rehype",
+    "html",
+    "plugin",
+    "figure",
+    "caption",
+    "typescript",
+    "unified",
+    "markdown",
+    "ast"
+  ],
+  "author": "Quang Trinh <khacquang.trinh@gmail.com> (https://tkhquang.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ljoss-Studios/rehype-figure-caption/issues"
+  },
+  "homepage": "https://github.com/Ljoss-Studios/rehype-figure-caption#readme",
+  "dependencies": {
+    "unist-util-visit-parents": "^6.0.1",
+    "hast": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/hast": "^2.3.4",
+    "@types/unist": "^2.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "typescript": "^4.6.3",
+    "vitest": "^0.11.0",
+    "unified": "^10.1.2",
+    "rehype-stringify": "^9.0.3",
+    "rehype-raw": "^6.1.0",
+    "remark": "^14.0.2",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "rehype-parse": "^8.0.4",
+    "unist-util-visit": "^4.1.1",
+    "hast-util-to-html": "^8.0.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  }
+}
