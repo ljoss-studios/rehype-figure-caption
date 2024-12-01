@@ -1,8 +1,8 @@
 // src/plugin.ts
 
-import { Plugin } from "unified";
+import { type Plugin } from "unified";
 import { visitParents } from "unist-util-visit-parents";
-import { Element, Root, Parent, RootContent } from "hast";
+import type { Element, Root, Parent, RootContent } from "hast";
 
 /**
  * Interface representing the options that can be passed to the plugin.
@@ -88,7 +88,7 @@ const transformImagesPlugin: Plugin<[PluginOptions?], Root> = (
 
       // Add image class name to the <img> element without duplicates
       if (imageClassName) {
-        const classNames = imgNode.properties.className;
+        const classNames = imgNode.properties!.className;
         let classList: Array<string | number>;
 
         if (Array.isArray(classNames)) {
@@ -109,7 +109,7 @@ const transformImagesPlugin: Plugin<[PluginOptions?], Root> = (
           classList.push(imageClassName);
         }
 
-        imgNode.properties.className =
+        imgNode.properties!.className =
           classList.length > 0 ? classList : undefined;
       }
 

@@ -4,7 +4,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
-import transformImagesPlugin from "../src/plugin";
+import transformImagesPlugin from "../src/plugin.js";
 
 describe("rehype-figure-caption plugin", () => {
   const createProcessor = (pluginOptions = {}, rehypeOptions = {}) => {

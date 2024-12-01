@@ -28,7 +28,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ljoss-Studios/rehype-figure-caption.git"
+    "url": "git+https://github.com/ljoss-studios/rehype-figure-caption.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -47,32 +47,32 @@
   "author": "Quang Trinh <khacquang.trinh@gmail.com> (https://tkhquang.dev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ljoss-Studios/rehype-figure-caption/issues"
+    "url": "https://github.com/ljoss-studios/rehype-figure-caption/issues"
   },
-  "homepage": "https://github.com/Ljoss-Studios/rehype-figure-caption#readme",
+  "homepage": "https://github.com/ljoss-studios/rehype-figure-caption#readme",
   "dependencies": {
-    "unist-util-visit-parents": "^6.0.1",
-    "hast": "^3.1.0"
+    "unist-util-visit-parents": "^6.0.1"
   },
   "devDependencies": {
-    "@types/hast": "^2.3.4",
-    "@types/unist": "^2.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.16.0",
-    "@typescript-eslint/parser": "^5.16.0",
-    "eslint": "^8.11.0",
-    "typescript": "^4.6.3",
-    "vitest": "^0.11.0",
-    "unified": "^10.1.2",
-    "rehype-stringify": "^9.0.3",
-    "rehype-raw": "^6.1.0",
-    "remark": "^14.0.2",
-    "remark-parse": "^10.0.1",
-    "remark-rehype": "^10.1.0",
-    "rehype-parse": "^8.0.4",
-    "unist-util-visit": "^4.1.1",
-    "hast-util-to-html": "^8.0.2",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2"
+    "@types/hast": "^3.0.4",
+    "@types/node": "^22.10.1",
+    "@types/unist": "^3.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vitest-globals": "^1.5.0",
+    "hast": "^1.0.0",
+    "prettier": "^3.4.1",
+    "rehype-parse": "^9.0.1",
+    "rehype-raw": "^7.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
+    "typescript": "^5.7.2",
+    "unified": "^11.0.5",
+    "vitest": "^2.1.6"
   }
 }
