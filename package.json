@@ -30,9 +30,6 @@
     "type": "git",
     "url": "git+https://github.com/ljoss-studios/rehype-figure-caption.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "keywords": [
     "rehype",
     "html",
